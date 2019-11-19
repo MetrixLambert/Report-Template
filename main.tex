@@ -1,0 +1,55 @@
+\documentclass{article}
+ 
+% ----------------------------------------------------------------
+% settings
+% ----------------------------------------------------------------
+\input{settings/settings.tex}
+\input{settings/newCmd.tex} 
+\graphicspath{{./fig/}}
+
+
+% ----------------------------------------------------------------
+% body part 
+% ----------------------------------------------------------------
+\begin{document}
+
+% ------------------------------------------------
+% cover 
+% ------------------------------------------------
+
+\thispagestyle{empty}
+\begin{center}
+    ~\\[4cm]\rule{\linewidth}{0.5mm} \\[6mm]
+    {\erhao{实验报告}  \\  \textbf{{\erhao{模板}}}  \\[6mm]}
+    \rule{\linewidth}{0.5mm} \\[8cm]
+
+\sanhao{
+    \begin{tabular}{ccc}
+        \textbf{姓名} &  & 吕光冉 \\
+        \textbf{班级} &  & 自73 \\
+        \textbf{学号} &  & 2017011574 \\
+        \textbf{日期} &  & \today 
+    \end{tabular}        
+}
+
+\end{center}
+\clearpage
+\phantom{s}
+
+
+% ------------------------------------------------
+% menu
+% ------------------------------------------------
+
+\tableofcontents
+\newpage
+
+% ------------------------------------------------
+% sections 
+% ------------------------------------------------
+
+\include{body/section1.tex} 
+
+
+
+\end{document}
